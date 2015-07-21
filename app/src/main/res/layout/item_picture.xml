@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/item_picture_size"
+    android:layout_height="@dimen/item_picture_size"
+    android:layout_margin="3dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_picture_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher" />
+</LinearLayout>
