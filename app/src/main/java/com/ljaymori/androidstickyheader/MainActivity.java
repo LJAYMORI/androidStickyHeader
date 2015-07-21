@@ -52,13 +52,14 @@ public class MainActivity extends ActionBarActivity {
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
 
-//                Log.i("dy", recyclerView.computeVerticalScrollOffset() + "");
                 View view = gridLayoutManager.getChildAt(0);
-//                Log.i("height", "" + view.getHeight());
                 if(view.getHeight() == introHeight) {
-                    viewTab.setVisibility(View.GONE);
+                    if(viewTab.getVisibility() == View.VISIBLE)
+                        viewTab.setVisibility(View.GONE);
+
                 } else {
-                    viewTab.setVisibility(View.VISIBLE);
+                    if(viewTab.getVisibility() == View.GONE)
+                        viewTab.setVisibility(View.VISIBLE);
                 }
 
 
